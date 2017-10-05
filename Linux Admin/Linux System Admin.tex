@@ -1,0 +1,229 @@
+\documentclass{beamer}
+
+\usepackage[british]{babel}
+\usepackage{graphicx,hyperref,ru,url}
+
+% The title of the presentation:
+%  - first a short version which is visible at the bottom of each slide;
+%  - second the full title shown on the title slide;
+\title[GNU/Linux System Administration]{
+  GNU/Linux System Administration }
+
+% Optional: a subtitle to be dispalyed on the title slide
+\subtitle{}
+
+% The author(s) of the presentation:
+%  - again first a short version to be displayed at the bottom;
+%  - next the full list of authors, which may include contact information;
+\author[Copyleft]{
+  \\\medskip
+  Sripath Roy Koganti %\and Vamsi Krishna 
+  \\\medskip
+  \small {Executive Committee, Swecha \\}
+  \small {Asst Prof, Dept of ECE, KL University \\}
+  {\small \url{sripathroy@swecha.net}} \\ 
+  {\small {+91 9963436838}}}
+  
+  
+\institute[]{
+  2 Day Workshop at : \\ 
+  Department of Computer Science and Engineering \\
+  JNTUK - University College of Engineering Vizianagaram}
+
+
+% Add a date and possibly the name of the event to the slides
+%  - again first a short version to be shown at the bottom of each slide
+%  - second the full date and event name for the title slide
+\date[22, 23 September 2017]{
+  22, 23 September 2017}
+
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{Outline}
+
+  \tableofcontents
+\end{frame}
+
+% Section titles are shown in at the top of the slides with the current section 
+% highlighted. Note that the number of sections determines the size of the top 
+% bar, and hence the university name and logo. If you do not add any sections 
+% they will not be visible.
+\section{Files and Folders}
+
+\begin{frame}
+  \frametitle{Files and Folders}
+
+  \begin{tabular}{|c|c|}
+\hline
+    \textbf{Command} & \textbf{Usage}\\
+\hline
+    touch & Creates an empty file\\
+\hline
+	cat & Shows content of a file\\
+\hline
+	wc & Counts number of Lines, Words, Characters in a file\\
+\hline
+	mkdir & Creates a directory\\
+\hline
+	ls & List files\\
+\hline
+	sort & Sort data in a file\\
+\hline
+\end{tabular}
+
+\end{frame}
+
+\section{File Manipulation}
+\begin{frame}
+  \frametitle{File Manipulation}
+
+  \begin{tabular}{|c|c|}
+\hline
+    \textbf{Command} & \textbf{Usage}\\
+\hline
+    cp & Copies one file to another file\\
+\hline
+	mv & Renames a file \\
+\hline
+	mv & Moves file from one directory to another directory\\
+\hline
+	rm & Deletes a file\\
+\hline
+	cd & Switch to a directory\\
+\hline
+	pwd & Shows the current directory\\
+	
+\hline
+\end{tabular}
+
+\end{frame}
+
+\section{File Permissions}
+\begin{frame}
+  \frametitle{File Permissions}
+
+  \begin{tabular}{|c|c|}
+\hline
+    \textbf{Command} & \textbf{Usage}\\
+\hline
+    chmod & Changes file permissions\\
+\hline
+	chown & Change file ownership \\
+\hline
+	chgrp & Change group permissions\\
+\hline
+	su & Super user mode\\
+\hline
+	sudo & Execute command as root\\
+
+\hline
+\end{tabular}
+
+\end{frame}
+
+\section{Text Editors and Help}
+\begin{frame}
+  \frametitle{Text Editors and Help}
+ \begin{block}{Editors}
+  \begin{itemize}
+      \item gedit - GUI Editor
+      \item nano - Editor with options
+    \end{itemize}
+	\end{block}
+	\begin{block}{Help}
+	\begin{itemize}
+      \item man - Manual
+      \item help - Manual
+    \end{itemize}
+\end{block}
+\end{frame}
+
+
+\section{Disk Management}
+\begin{frame}
+  \frametitle{Disk Management}
+
+  \begin{tabular}{|c|c|}
+  \hline
+    \textbf{Command} & \textbf{Usage}\\
+\hline
+    df & Partion details \\
+\hline
+    mount & Mount a file system\\
+\hline
+	 umount & Unmount a file system\\
+\hline
+	du &  Disk usage in directory tree\\
+\hline
+	free & To see memory usage\\
+\hline
+\end{tabular}
+
+\end{frame}
+
+
+\section{Tasks}
+\begin{frame}
+  \frametitle{Tasks}
+  \begin{block}{ Task 1: Permissions}
+  
+  \begin{itemize}
+    \item Copy files a and A to Swecha folder
+    \item See the permissions for file
+    \item Change file permissions as all can read, only group can write and only user can execute
+    \item Now check permissions of Swecha folder
+    \item Change its permissions
+  \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Tasks}
+ \begin{block}{ Task 2: Files and Folders}
+  
+  \begin{itemize}
+    \item Create a folder Swecha
+    \item Enter Swecha folder
+    \item Create 2 files a and A
+    \item Edit files with content
+    \item Move files to Desktop
+   \end{itemize}
+   \end{block}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Tasks}
+ \begin{block}{ Task 3: Shell Scripting}
+  
+  \begin{itemize}
+    \item Open a editor
+    \item Write all commands used for files and folders task
+    \item Save file with .sh extension
+    \item run the file
+  %  \item Move files to Desktop
+  \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Tasks}
+ \begin{block}{ Task 4: Create your Own Command}
+  
+  \begin{itemize}
+    \item Convert the Task 3 File to Executable(Change Permissions)
+    \item Rename by removing .sh extension
+    \item Copy the file to /bin
+    \item Type the command anywhere
+  %  \item Move files to Desktop
+  \end{itemize}
+  \end{block}
+\end{frame}
+
+
+\end{document}
